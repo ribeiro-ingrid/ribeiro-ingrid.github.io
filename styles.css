@@ -90,3 +90,11 @@ body {
         font-size: 18px; 
         text-align: justify;
         }
+
+        #codes img {
+        width: 100px; /* Adjust size */
+        height: auto; /* Keeps proportions */
+        display: block; /* Ensures proper spacing */
+        margin-bottom: 5px; /* Adds space between image and text */
+        }
+
