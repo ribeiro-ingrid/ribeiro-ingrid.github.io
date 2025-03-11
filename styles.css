@@ -55,8 +55,8 @@ body {
         }
 
         h3 {
-            color: #444;
-            font-size: 20px;
+            color: #005F73;
+            font-size: 24px;
         }
 
         ul {
@@ -91,10 +91,10 @@ body {
         text-align: justify;
         }
 
-        #codes img {
-        width: 100px; /* Adjust size */
-        height: auto; /* Keeps proportions */
-        display: block; /* Ensures proper spacing */
-        margin-bottom: 5px; /* Adds space between image and text */
-        }
+
+
+
+
+
+
 
