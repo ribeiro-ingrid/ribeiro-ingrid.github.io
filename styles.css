@@ -139,7 +139,7 @@ p {
 }
 
 .code-item img {
-    width: 400px; /* Increase image size */
+    width: 300px; /* Increase image size */
     height: auto;
     display: block;
     margin: 0 auto 10px;
