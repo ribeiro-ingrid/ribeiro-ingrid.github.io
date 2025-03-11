@@ -1,8 +1,8 @@
 body {
             font-family: Georgia, serif;
             line-height: 1.8;
-            margin-left: 40px;
-            margin-right: 40px;
+            margin-left: 60px;
+            margin-right: 60px;
             padding: 0;
             background-color: #fff2e6;
             color: #333;
@@ -82,11 +82,11 @@ body {
         }
         
         #research {
-        font-size: 15px; 
+        font-size: 16px; 
         text-align: justify;
         }
         
         #bio {
-        font-size: 15px; 
+        font-size: 16px; 
         text-align: justify;
         }
