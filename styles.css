@@ -21,7 +21,7 @@ body {
 
         h2 {
             font-size: 22px;
-            color: #666;
+            color: #005F73;
         }
 
         nav {
@@ -91,6 +91,43 @@ body {
         text-align: justify;
         }
 
+        #favorite-tools {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f9f9f9; /* Light background */
+        }
+
+        .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.tool {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tool img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.tool h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tool p {
+  font-size: 14px;
+  color: #666;
+}
 
 
 
