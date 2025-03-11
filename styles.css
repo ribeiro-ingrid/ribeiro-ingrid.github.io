@@ -139,7 +139,7 @@ p {
 }
 
 .code-item img {
-    width: 250px; /* Increase image size */
+    width: 400px; /* Increase image size */
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -152,6 +152,8 @@ p {
     font-weight: bold;
     display: block;
     transition: color 0.3s ease;
+    text-align: center; /* Ensures the text is fully centered */
+    margin-top: 5px; /* Adds spacing from image */
 }
 
 .code-item a:hover {
