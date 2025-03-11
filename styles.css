@@ -214,3 +214,10 @@ p {
 .code-item a:hover {
     color: #005bb5;
 }
+
+.header-gif {
+    width: 40px;  /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Aligns with text */
+    margin-left: 10px; /* Spacing from the name */
+}
