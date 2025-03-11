@@ -94,7 +94,6 @@ body {
         #favorite-tools {
         text-align: center;
         padding: 50px 20px;
-        background-color: #f9f9f9; /* Light background */
         }
 
         .tools-grid {
@@ -127,4 +126,34 @@ body {
 .tool p {
   font-size: 14px;
   color: #666;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.code-item {
+    margin: 20px auto;
+}
+
+.code-item img {
+    width: 250px; /* Increase image size */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.code-item a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.code-item a:hover {
+    color: #005bb5;
 }
