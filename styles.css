@@ -215,7 +215,7 @@ p {
     color: #005bb5;
 }
 
-.header-container {
+.bio {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align items closely */
@@ -225,7 +225,7 @@ p {
     margin: auto; /* Centers the header */
 }
 
-.header-text {
+.bio-text {
     flex: none;
     text-align: left;
 }
