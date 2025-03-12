@@ -219,18 +219,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 40px; /* Increase spacing */
-    max-width: 1200px; /* Slightly wider */
-    margin: auto;
-    padding: 0px 20px; /* Adds some padding */
+    gap: 50px; /* Increase spacing */
+    max-width: 1300px; /* Slightly wider */
+    margin: 0 auto;
+    padding: 0; /* Adds some padding */
 }
 
 .bio-text {
-    flex: 3; /* Allows more space for text */
+    flex: 4; /* Allows more space for text */
     text-align: justify;
     font-size: 18px;
     line-height: 1.8; /* Better readability */
     margin-left: 0px;
+    padding-left: 20px;
 }
 
 .bio-image {
