@@ -218,15 +218,20 @@ p {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start; /* Align items closely */
+    gap: 30px; /* Adds some spacing without pushing too far */
     border-bottom: 2px solid #ddd;
+    max-width: 900px; /* Adjust as needed */
+    margin: auto; /* Centers the header */
 }
 
 .header-text {
-    flex: 1;
+    flex: none;
     text-align: left;
 }
 
 .header-image img {
     width: 400px; /* Adjust the size as needed */
     height: auto;
+    margin-left: 20px;
 }
