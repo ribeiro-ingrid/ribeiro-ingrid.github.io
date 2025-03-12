@@ -231,7 +231,13 @@ p {
 }
 
 .header-image img {
-    width: 400px; /* Adjust the size as needed */
+    width: 350px; /* Adjust the size as needed */
     height: auto;
     margin-left: 20px;
+    border: 3px solid #333; /* Dark border around the figure */
+    padding: 15px; /* Adds space between the figure and the border */
+    display: inline-block; /* Ensures it wraps tightly around the content */
+    background-color: #f9f9f9; /* Light background to make it stand out */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
+
