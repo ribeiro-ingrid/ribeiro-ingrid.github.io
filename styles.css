@@ -220,13 +220,13 @@ p {
     align-items: center;
     justify-content: flex-start;
     gap: 50px; /* Increase spacing */
-    max-width: 900px; /* Slightly wider */
+    max-width: 1300px; /* Slightly wider */
     margin: 0 auto;
     padding: 0; /* Adds some padding */
 }
 
 .bio-text {
-    flex: 4; /* Allows more space for text */
+    flex: 5; /* Allows more space for text */
     text-align: justify;
     font-size: 18px;
     line-height: 1.8; /* Better readability */
