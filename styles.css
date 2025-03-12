@@ -219,8 +219,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px; /* Increase spacing */
-    max-width: 1000px; /* Slightly wider */
+    gap: 40px; /* Increase spacing */
+    max-width: 1200px; /* Slightly wider */
     margin: auto;
     padding: 20px; /* Adds some padding */
 }
@@ -240,7 +240,7 @@ p {
 }
 
 .bio-image img {
-    width: 500px; /* Adjust to a reasonable size */
+    width: 400px; /* Adjust to a reasonable size */
     height: auto;
     border: 3px solid #333;
     padding: 15px;
