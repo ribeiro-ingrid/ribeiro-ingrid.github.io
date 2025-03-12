@@ -218,11 +218,11 @@ p {
 .bio-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 40px; /* Increase spacing */
     max-width: 1200px; /* Slightly wider */
     margin: auto;
-    padding: 20px; /* Adds some padding */
+    padding: 0px 20px; /* Adds some padding */
 }
 
 .bio-text {
@@ -236,7 +236,7 @@ p {
 .bio-image {
     flex: 1; /* Reduces image width */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .bio-image img {
