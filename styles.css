@@ -215,7 +215,7 @@ p {
     color: #005bb5;
 }
 
-.bio.container {
+.bio-container {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align items closely */
