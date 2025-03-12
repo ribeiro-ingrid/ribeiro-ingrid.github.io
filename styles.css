@@ -239,5 +239,6 @@ p {
     display: inline-block; /* Ensures it wraps tightly around the content */
     background-color: #f9f9f9; /* Light background to make it stand out */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    border-radius: 15px; /* Rounds the corners */
 }
 
