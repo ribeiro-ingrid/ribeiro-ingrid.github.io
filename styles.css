@@ -231,7 +231,7 @@ p {
     font-size: 18px;
     line-height: 1.8; /* Better readability */
     margin-left: 0;
-    padding-left: 0;
+    padding: 0;
 }
 
 .bio-image {
@@ -241,10 +241,10 @@ p {
 }
 
 .bio-image img {
-    width: 400px; /* Adjust to a reasonable size */
+    width: 500px; /* Adjust to a reasonable size */
     height: auto;
     border: 3px solid #333;
-    padding: 15px;
+    padding: 0;
     background-color: #f9f9f9;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
