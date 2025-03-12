@@ -226,10 +226,11 @@ p {
 }
 
 .bio-text {
-    flex: 2; /* Allows more space for text */
+    flex: 2.5; /* Allows more space for text */
     text-align: justify;
     font-size: 18px;
     line-height: 1.8; /* Better readability */
+    margin-left: 0px;
 }
 
 .bio-image {
