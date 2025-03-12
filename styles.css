@@ -215,4 +215,21 @@ p {
     color: #005bb5;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
 
+.header-text {
+    flex: 1;
+    text-align: left;
+}
+
+.header-image img {
+    width: 120px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: Makes the image circular */
+}
