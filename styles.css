@@ -15,29 +15,36 @@
     --shadow: rgba(34, 34, 59, 0.12);
 }
 
+
 /* =========================
    General page style
    ========================= */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Georgia, serif;
-    line-height: 1.8;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 32px 28px;
     background-color: var(--bg);
     color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
 }
 
 p {
     font-size: 16px;
     color: var(--body-text);
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
 a {
     color: var(--accent-dark);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -54,25 +61,30 @@ ul {
    Header
    ========================= */
 
-header {
+header,
+.header {
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--border);
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 34px;
     color: var(--heading);
+    margin: 0 0 8px 0;
 }
 
 h2 {
     font-size: 22px;
     color: var(--body-text);
+    margin: 0;
 }
 
 h3 {
     color: var(--heading);
-    font-size: 24px;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 18px;
 }
 
 .tagline {
@@ -90,43 +102,27 @@ h3 {
 
 nav {
     text-align: center;
-    font-size: 22px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 13px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--accent-dark);
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: var(--accent);
-    text-decoration: underline;
 }
 
 #quick-nav {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin: 20px 0 30px 0;
+    padding-bottom: 18px;
     border-bottom: 2px solid var(--border);
+    font-size: 16px;
+}
+
+#quick-nav p {
+    margin: 0;
 }
 
 #quick-nav a {
     color: var(--accent-dark);
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: bold;
 }
 
 #quick-nav a:hover {
@@ -136,11 +132,11 @@ nav ul li a:hover {
 
 
 /* =========================
-   Sections
+   General section style
    ========================= */
 
 section {
-    padding-bottom: 10px;
+    padding: 28px 0;
     border-bottom: 2px solid var(--border);
 }
 
@@ -148,6 +144,65 @@ section:last-of-type {
     border-bottom: none;
 }
 
+
+/* =========================
+   Research interests + image
+   ========================= */
+
+.research-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 35px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.research-text {
+    flex: 1.25;
+    min-width: 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.research-text p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 0;
+    line-height: 2.0;
+}
+
+.research-image {
+    flex: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.research-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 3px solid var(--heading);
+    border-radius: 15px;
+    background-color: var(--card-bg);
+    box-shadow: 5px 5px 10px var(--shadow);
+}
+
+/* =========================
+   News
+   ========================= */
+
+#news {
+    font-size: 18px;
+}
+
+#news p,
+.news-item p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
 
 /* =========================
    Bio section
@@ -177,20 +232,8 @@ section:last-of-type {
     padding: 0;
 }
 
-.bio-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.bio-image img {
-    width: 550px;
-    height: auto;
-    border: 3px solid var(--heading);
-    padding: 0;
-    background-color: var(--card-bg);
-    box-shadow: 5px 5px 10px var(--shadow);
-    border-radius: 15px;
+.bio-text p {
+    font-size: 18px;
 }
 
 
@@ -228,18 +271,46 @@ section:last-of-type {
 
 
 /* =========================
-   Publications and contact
+   News
+   ========================= */
+
+#news {
+    font-size: 18px;
+}
+
+.news-item p {
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   Publications
    ========================= */
 
 #papers {
-    font-size: 15px;
+    font-size: 16px;
 }
 
-#contact {
+#papers p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+#papers em {
+    color: var(--heading);
+}
+
+/* =========================
+   Contact
+   ========================= */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
     font-size: 20px;
-    text-align: center;
+    margin: 6px 0;
 }
-
 
 /* =========================
    Badges
@@ -270,28 +341,30 @@ section:last-of-type {
 
 #favorite-tools {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 0;
 }
 
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 800px;
-    margin: auto;
+    gap: 22px;
+    max-width: 900px;
+    margin: 25px auto 0 auto;
 }
 
 .tool {
     background: var(--card-bg);
-    padding: 20px;
+    padding: 22px;
     border-radius: 12px;
     box-shadow: 0 4px 12px var(--shadow);
     text-align: center;
+    border: 1px solid var(--border);
 }
 
 .tool img {
-    width: 50px;
-    height: auto;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
@@ -303,6 +376,7 @@ section:last-of-type {
 .tool p {
     font-size: 14px;
     color: var(--body-text);
+    margin-bottom: 0;
 }
 
 
@@ -317,27 +391,29 @@ section:last-of-type {
 
 .codes-grid {
     display: grid;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 25px auto 0 auto;
     padding: 0 10px;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .code-item {
     background: var(--card-bg);
-    padding: 20px;
+    padding: 22px;
     border-radius: 12px;
     box-shadow: 0 4px 12px var(--shadow);
     text-align: center;
-    margin: 20px auto;
+    border: 1px solid var(--border);
 }
 
 .code-item img {
-    width: 300px;
-    height: auto;
+    width: 100%;
+    max-width: 300px;
+    height: 160px;
+    object-fit: contain;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 14px auto;
 }
 
 .code-item a {
@@ -363,10 +439,15 @@ section:last-of-type {
 footer {
     text-align: center;
     margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 14px;
     font-size: 15px;
     color: var(--body-text);
     border-top: 2px solid var(--border);
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
 
@@ -374,15 +455,40 @@ footer {
    Mobile-friendly layout
    ========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     body {
-        margin-left: 25px;
-        margin-right: 25px;
+        padding: 26px 22px;
     }
 
-    nav ul li {
-        display: block;
-        margin: 8px 0;
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .research-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .research-text {
+        width: 100%;
+    }
+
+    .research-text p {
+        font-size: 17px;
+    }
+
+    .research-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .research-image img {
+        max-width: 100%;
     }
 
     .bio-container {
@@ -390,13 +496,36 @@ footer {
         gap: 25px;
     }
 
-    .bio-image {
-        justify-content: center;
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 22px 16px;
     }
 
-    .bio-image img {
-        width: 90%;
-        max-width: 400px;
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    #quick-nav {
+        gap: 8px 12px;
+        font-size: 15px;
+    }
+
+    .research-text p {
+        text-align: left;
     }
 
     .tools-grid {
@@ -410,15 +539,4 @@ footer {
     .research-grid {
         grid-template-columns: 1fr;
     }
-}
-
-#research-interests {
-    font-size: 20px;
-    text-align: justify;
-}
-
-#research-interests > p {
-    max-width: 1000px;
-    margin: 0 auto 25px auto;
-    font-size: 18px;
 }
