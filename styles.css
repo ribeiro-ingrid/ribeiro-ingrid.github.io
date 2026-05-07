@@ -209,7 +209,7 @@ section:last-of-type {
    ========================= */
 
 #bio {
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -226,18 +226,18 @@ section:last-of-type {
 .bio-text {
     flex: 5;
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2.0;
     margin-left: 0;
     padding: 0;
 }
 
 .bio-text p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .content-card {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7;
     flex: 5;
     text-align: justify;
@@ -247,7 +247,7 @@ section:last-of-type {
 }
 
 .content-card p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
     flex: 5;
     text-align: justify;
@@ -257,7 +257,7 @@ section:last-of-type {
 }
 
 #academic-background p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
