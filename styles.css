@@ -227,12 +227,36 @@ section:last-of-type {
     flex: 5;
     text-align: justify;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 2.0;
     margin-left: 0;
     padding: 0;
 }
 
 .bio-text p {
+    font-size: 18px;
+}
+
+.content-card {
+    font-size: 18px;
+    line-height: 1.7;
+    flex: 5;
+    text-align: justify;
+    line-height: 2.0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.content-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    flex: 5;
+    text-align: justify;
+    line-height: 2.0;
+    margin-left: 0;
+    padding: 0;
+}
+
+#academic-background p {
     font-size: 18px;
 }
 
