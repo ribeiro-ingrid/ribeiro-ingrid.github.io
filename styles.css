@@ -154,7 +154,7 @@ section:last-of-type {
     align-items: center;
     justify-content: space-between;
     gap: 45px;
-    padding: 35px 0;
+    padding: 0 0 30px;
     font-size: 18px;
     text-align: justify;
 }
@@ -163,7 +163,7 @@ section:last-of-type {
     flex: 1.25;
     min-width: 0;
     font-size: 18px;
-    text-align: justify;
+    
 }
 
 .research-text p {
@@ -181,13 +181,14 @@ section:last-of-type {
 }
 
 .research-image img {
+
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;   /* smaller figure */
     height: auto;
-    border: 3px solid var(--heading);
-    border-radius: 15px;
-    background-color: var(--card-bg);
-    box-shadow: 5px 5px 10px var(--shadow);
+    border: none;       /* removes black border */
+    border-radius: 6px;
+    background-color: transparent;
+    box-shadow: none;   /* removes shadow; optional */
 }
 
 /* =========================
@@ -564,3 +565,84 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+```css
+/* General figure container */
+.research-figures {
+  margin: 1.5rem auto 2rem auto;
+}
+
+.research-figures figure {
+  margin: 0;
+  text-align: center;
+}
+
+.research-figures img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* 2 columns x 2 rows figure grid */
+.two-by-two {
+display: grid; 
+grid-template-columns: repeat(4, 1fr); 
+gap: 0.85rem; 
+max-width: 1000px; 
+margin-left: auto; margin-right: auto; 
+align-items: start;
+gap: 3rem;        /* space between figures */
+}
+
+/* Only the 2x2 figures are forced into square boxes */
+.two-by-two img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #fff;
+}
+
+/* Single figure below the second paragraph */
+.single-panel {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto 2rem auto;
+}
+
+.single-panel figure {
+  max-width: 450px;
+}
+
+/* Do not force square aspect ratio for the single figure */
+.single-panel img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+/* Captions */
+.research-figures figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: #555;
+}
+
+.research-figures figcaption a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.research-figures figcaption a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile layout */
+@media (max-width: 800px) {
+  .two-by-two {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}
+```
