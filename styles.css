@@ -638,6 +638,10 @@ gap: 3rem;        /* space between figures */
   text-decoration: underline;
 }
 
+.code-item p:first-of-type {
+  text-align: justify;
+}
+
 /* Mobile layout */
 @media (max-width: 800px) {
   .two-by-two {
